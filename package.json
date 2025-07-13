@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "build": "npm install && npm run build:client",
+    "build:client": "webpack --mode production",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  }
+}

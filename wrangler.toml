@@ -1,0 +1,14 @@
+name = "fake-identity-generator"
+type = "webpack"
+account_id = "" # Isi dengan Cloudflare account ID Anda
+workers_dev = true
+route = ""
+zone_id = "" # Isi dengan Zone ID jika Anda memiliki domain kustom
+compatibility_date = "2023-01-01"
+
+[site]
+bucket = "./public"
+entry-point = "workers-site"
+
+[env.production]
+workers_dev = false
