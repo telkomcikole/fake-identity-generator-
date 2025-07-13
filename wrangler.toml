@@ -1,14 +1,7 @@
 name = "fake-identity-generator"
-type = "webpack"
-account_id = "" # Isi dengan Cloudflare account ID Anda
-workers_dev = true
-route = ""
-zone_id = "" # Isi dengan Zone ID jika Anda memiliki domain kustom
-compatibility_date = "2023-01-01"
+compatibility_date = "2025-07-13"
 
-[site]
-bucket = "./public"
-entry-point = "workers-site"
+[build]
+command = "npm run build" # Jika ada proses build, atau hapus jika statis
 
-[env.production]
-workers_dev = false
+pages_build_output_dir = "./dist" # Ganti 'dist' sesuai folder output file statis Anda
